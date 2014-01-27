@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1390809828 source:e:\workspace\cpp\codeblocks\test2\base\cwinbase.cpp
+	"../include/base/CWinBase.h"
+	<windows.h>
+	<iostream>
+
+1390811013 e:\workspace\cpp\codeblocks\test2\include\base\cwinbase.h
+	<windows.h>
+
+1390806154 source:e:\workspace\cpp\codeblocks\test2\main.cpp
+	<tchar.h>
+	<windows.h>
+	"include/resource.h"
+	"include/CWinMain.h"
+	<iostream>
+
+1390812122 source:e:\workspace\cpp\codeblocks\test2\base\cwinbutton.cpp
+	"../include/base/CWinButton.h"
+	"../include/resource.h"
+	<tchar.h>
+	<iostream>
+
+1390811984 e:\workspace\cpp\codeblocks\test2\include\base\cwinbutton.h
+	"CWinBase.h"
+
+1390793472 e:\workspace\cpp\codeblocks\test2\include\global.h
+	<windows.h>
+
+1390812097 source:e:\workspace\cpp\codeblocks\test2\cwinmain.cpp
+	"include/CWinMain.h"
+	"include/resource.h"
+	"include/base/CWinButton.h"
+	<tchar.h>
+	<iostream>
+
+1390811994 e:\workspace\cpp\codeblocks\test2\include\cwinmain.h
+	"base/CWinBase.h"
+
+1390793468 source:e:\workspace\cpp\codeblocks\test2\global.cpp
+	"include/Global.h"
+
+1390790595 e:\workspace\cpp\codeblocks\test2\test.h
+
+1390790633 source:e:\workspace\cpp\codeblocks\test2\test.cpp
+	"test.h"
+	"include/Global.h"
+	<tchar.h>
+	<iostream>
+
+1390804146 e:\workspace\cpp\codeblocks\test2\include\resource.h
+	"Global.h"
+
