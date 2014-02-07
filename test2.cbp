@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -37,6 +39,15 @@
 			<Add library="kernel32" />
 			<Add library="comctl32" />
 		</Linker>
+		<Unit filename="CWinMain.cpp" />
+		<Unit filename="Global.cpp" />
+		<Unit filename="base/CWinBase.cpp" />
+		<Unit filename="base/CWinButton.cpp" />
+		<Unit filename="include/CWinMain.h" />
+		<Unit filename="include/Global.h" />
+		<Unit filename="include/base/CWinBase.h" />
+		<Unit filename="include/base/CWinButton.h" />
+		<Unit filename="include/resource.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

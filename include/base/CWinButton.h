@@ -5,10 +5,6 @@
 
 class CWinButton : public CWinBase
 {
-public :
-    virtual void    AfterShow();
-    virtual void    OnLButtonDown();
-
 private :
     virtual int    Create();
 };

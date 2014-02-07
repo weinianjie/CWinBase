@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1390809828 source:e:\workspace\cpp\codeblocks\test2\base\cwinbase.cpp
+1391762419 source:e:\workspace\cpp\codeblocks\test2\base\cwinbase.cpp
 	"../include/base/CWinBase.h"
 	<windows.h>
 	<iostream>
 
-1390811013 e:\workspace\cpp\codeblocks\test2\include\base\cwinbase.h
+1391760880 e:\workspace\cpp\codeblocks\test2\include\base\cwinbase.h
 	<windows.h>
 
 1390806154 source:e:\workspace\cpp\codeblocks\test2\main.cpp
@@ -14,20 +14,21 @@
 	"include/CWinMain.h"
 	<iostream>
 
-1390812122 source:e:\workspace\cpp\codeblocks\test2\base\cwinbutton.cpp
+1391760421 source:e:\workspace\cpp\codeblocks\test2\base\cwinbutton.cpp
 	"../include/base/CWinButton.h"
 	"../include/resource.h"
 	<tchar.h>
 	<iostream>
 
-1390811984 e:\workspace\cpp\codeblocks\test2\include\base\cwinbutton.h
+1391760450 e:\workspace\cpp\codeblocks\test2\include\base\cwinbutton.h
 	"CWinBase.h"
 
 1390793472 e:\workspace\cpp\codeblocks\test2\include\global.h
 	<windows.h>
 
-1390812097 source:e:\workspace\cpp\codeblocks\test2\cwinmain.cpp
+1391760345 source:e:\workspace\cpp\codeblocks\test2\cwinmain.cpp
 	"include/CWinMain.h"
+	"include/CSubmitButton.h"
 	"include/resource.h"
 	"include/base/CWinButton.h"
 	<tchar.h>
@@ -49,4 +50,14 @@
 
 1390804146 e:\workspace\cpp\codeblocks\test2\include\resource.h
 	"Global.h"
+
+1391760964 e:\workspace\cpp\codeblocks\test2\include\csubmitbutton.h
+	"base/CWinButton.h"
+
+1391761005 source:e:\workspace\cpp\codeblocks\test2\csubmitbutton.cpp
+	"include/CSubmitButton.h"
+	"include/resource.h"
+	"include/base/CWinButton.h"
+	<tchar.h>
+	<iostream>
 

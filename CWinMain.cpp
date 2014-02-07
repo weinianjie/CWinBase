@@ -1,4 +1,5 @@
 #include "include/CWinMain.h"
+#include "include/CSubmitButton.h"
 #include "include/resource.h"
 #include "include/base/CWinButton.h"
 #include <tchar.h>
@@ -13,7 +14,7 @@ int CWinMain::Create()
     /* The Window structure */
     wincl.hInstance = this->hInstance;
     wincl.lpszClassName = szClassName;
-    wincl.lpfnWndProc = CWinBase::EventDispatcher;      /* This function is called by windows */
+    wincl.lpfnWndProc = CWinBase::DefaultProc;      /* This function is called by windows */
     wincl.style = CS_DBLCLKS;                 /* Catch double-clicks */
     wincl.cbSize = sizeof (WNDCLASSEX);
 
@@ -51,12 +52,12 @@ int CWinMain::Create()
     ShowWindow(hwnd, SW_SHOW);
     UpdateWindow(hwnd);
 
-    //创建子窗口
-    CWinButton* button = new CWinButton();
-    button->Show(this->hInstance, this->hwnd);
+
+//    CWinButton* button = new CWinButton();
+//    button->Show(this->hInstance, this->hwnd);
 //
-//    CWinButton* button2 = new CWinButton();
-//    button2->Show(this->hInstance, this->hwnd);
+    CSubmitButton* button2 = new CSubmitButton();
+    button2->Show(this->hInstance, this->hwnd);
 
     return 2;
 }

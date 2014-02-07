@@ -12,10 +12,29 @@ class CWinBase
 
         virtual int     Create() = 0;
                 void    Show(HINSTANCE hInstance, HWND parentHwnd);
-        virtual void    AfterShow();
+        virtual void    OnCreate();
         virtual void    OnLButtonDown();
+        virtual void    OnLButtonUp();
+        virtual void    OnLButtonDbClick();
+        virtual void    OnRButtonDown();
+        virtual void    OnRButtonUp();
+        virtual void    OnRButtonDbClick();
+        virtual void    OnMButtonDown();
+        virtual void    OnMButtonUp();
+        virtual void    OnMButtonDbClick();
+        virtual void    OnMouseWheel();
+        virtual void    OnMouseMove();
+        virtual void    OnMove();
+        virtual void    OnSize();
+        virtual void    OnSetFocus();
+        virtual void    OnKillFocus();
+        virtual void    OnHscroll();
+        virtual void    OnVscroll();
 
     protected:
+                WNDPROC OldMsgProc;
+                static  LRESULT  CALLBACK   DefaultProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
+    private:
                 static  LRESULT  CALLBACK   EventDispatcher(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 };

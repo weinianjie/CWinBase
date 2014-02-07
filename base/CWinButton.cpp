@@ -26,15 +26,4 @@ int CWinButton::Create()
     return 0;
 }
 
-//在这里控制样式
-void CWinButton::AfterShow()
-{
-
-}
-
-void CWinButton::OnLButtonDown()
-{
-    std::cout << "1";
-}
-
 
